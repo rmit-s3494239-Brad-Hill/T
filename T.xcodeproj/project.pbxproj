@@ -14,6 +14,7 @@
 		A8A8AE701CC622A3003BB3DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A8AE6E1CC622A3003BB3DA /* LaunchScreen.storyboard */; };
 		A8A8AE7B1CC622A3003BB3DA /* TTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A8AE7A1CC622A3003BB3DA /* TTests.swift */; };
 		A8A8AE861CC622A3003BB3DA /* TUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A8AE851CC622A3003BB3DA /* TUITests.swift */; };
+		A8A8AE961CC62547003BB3DA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A8AE951CC62547003BB3DA /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A8A8AE811CC622A3003BB3DA /* TUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A8AE851CC622A3003BB3DA /* TUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUITests.swift; sourceTree = "<group>"; };
 		A8A8AE871CC622A3003BB3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8A8AE951CC62547003BB3DA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A8AE961CC62547003BB3DA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		A8A8AE591CC622A2003BB3DA = {
 			isa = PBXGroup;
 			children = (
+				A8A8AE951CC62547003BB3DA /* MapKit.framework */,
 				A8A8AE641CC622A3003BB3DA /* T */,
 				A8A8AE791CC622A3003BB3DA /* TTests */,
 				A8A8AE841CC622A3003BB3DA /* TUITests */,
@@ -194,6 +198,11 @@
 					A8A8AE611CC622A3003BB3DA = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 37LK6J4LHD;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A8A8AE751CC622A3003BB3DA = {
 						CreatedOnToolsVersion = 7.2;
